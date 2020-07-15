@@ -18,12 +18,19 @@ public class Main {
 
 /////////Testing Order class\\\\\\\\\\\\\\\
 
-        Order order = new Order();
+        for(int i=1; i<40;i++) {
+            Order order = new Order();
 
-        System.out.println(order.uuid);
-        System.out.println(order.itemList);
-        System.out.println(order.itemFrqencyList);
+            if(!(order.uuid == null)) {
+                System.out.println(order.uuid);
+                System.out.println(order.itemIdList);
+                System.out.println(order.itemFreqencyList);
+                System.out.println(order.getOrderStatus());
+                System.out.println();
+            }
 
+        }
+        System.out.println(OrderList.orderUUIDList);
 
 
 
