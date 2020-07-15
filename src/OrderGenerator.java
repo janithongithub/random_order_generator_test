@@ -3,8 +3,10 @@ import java.util.List;
 
 public class OrderGenerator {
 
-    int orderID;
-    List<Integer> itemIdList = new ArrayList<>();          // item ids are form 1 to 100
+
+    //generate orders randomly according to probability
+
+    List<Integer> itemIdList = new ArrayList<>();          // item ids are form 1 to 100 in DB
     List<Integer> itemFrequencyList = new ArrayList<>();
     int numberOfItems;
     int itemFrequency;
@@ -60,10 +62,6 @@ public class OrderGenerator {
     ///////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
     public void generateRandomOrders(){
-
-
-
-
 
 
 
@@ -145,7 +143,6 @@ public class OrderGenerator {
         }
         else {
             //No order generated 80% chance
-            System.out.println("no order generated");
         }
 
 
@@ -154,27 +151,6 @@ public class OrderGenerator {
 
 
     }
-
-
-
-
-
-
-
-
-
-
-    /////
-
-    public void addItemsToOrder(){
-        //   orderItemIdList.add(/*Item ID from Database*/);
-    }
-
-
-    //read item id fromDB and store in arraylist
-    //add item id to orderItemIdList
-
-
 
 
 
