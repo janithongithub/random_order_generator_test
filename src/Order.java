@@ -17,10 +17,11 @@ public class Order {
     int orderStatus; //return   0 - new     1 - completed   5 - processing
 
 
+    /////////////////////////////////List of all Orders created\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
+    public static List<Order> ol = new ArrayList<>();
 
-
-    /////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    ////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
     OrderProbabilityGenerator orderGenerator = new OrderProbabilityGenerator();
 
@@ -36,6 +37,7 @@ public class Order {
             this.orderStatus = 0;
 
             OrderList.orderUUIDList.add(this.uuid);
+            ol.add(this);
 
         }
 

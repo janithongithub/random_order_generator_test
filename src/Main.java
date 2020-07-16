@@ -31,6 +31,9 @@ public class Main {
 
         }
         System.out.println(OrderList.orderUUIDList);
+        System.out.println(Order.ol); //prints all objects
+
+        System.out.println(Order.ol.get(2).uuid);
 
 
 
